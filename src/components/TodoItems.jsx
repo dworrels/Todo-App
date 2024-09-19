@@ -2,7 +2,7 @@ import tick from '../assets/tick.png'
 import not_tick from '../assets/not_tick.png'
 import trash from '../assets/trash.png'
 
-const TodoItems = ({text}) => {
+const TodoItems = ({text, id, isComplete, deleteTodo}) => {
   return (
     <div className='flex items-center my-3 gap-2'>
         <div className='flex flex-1 place-items-center cursor-pointer'>
@@ -11,7 +11,7 @@ const TodoItems = ({text}) => {
               {text}</p>
         </div>
 
-      <img src={trash} alt="" className='w-4 cursor-pointer'/>
+      <img onClick={()=>{deleteTodo(id)}} src={trash} alt="" className='w-4 cursor-pointer'/>
       
     </div>
   )
