@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import tick from '../assets/tick.png'
 import not_tick from '../assets/not_tick.png'
 import trash from '../assets/trash.png'
@@ -18,4 +19,16 @@ const TodoItems = ({text, id, isComplete, deleteTodo, toggle}) => {
   )
 }
 
-export default TodoItems
+TodoItems.propTypes = {
+  text: PropTypes.string.isRequired,
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  isComplete: PropTypes.bool.isRequired,
+  deleteTodo: PropTypes.func.isRequired,
+  toggle: PropTypes.func.isRequired,
+};  
+
+  export default TodoItems;
+
+  
+  
+ 
