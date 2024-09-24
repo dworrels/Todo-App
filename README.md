@@ -13,8 +13,8 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
 ```
-git clone https://github.com/dworrels/task-app.git
-cd task-app
+git clone https://github.com/dworrels/Todo-App.git
+cd Todo-App
 ```
 2. **Install dependencies:**
 ```
